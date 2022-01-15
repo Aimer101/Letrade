@@ -1,0 +1,56 @@
+.test {
+  .Container {
+    margin-top: 5rem;
+    .wrapper {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .top {
+        font-size: 2rem;
+      }
+
+      .bottom {
+        color: white;
+        .tableTitle {
+          background-color: rgb(8, 2, 94);
+          display: flex;
+          padding: 1rem;
+          align-items: center;
+          justify-content: space-around;
+          margin-bottom: 1rem;
+          & > * {
+            flex: 0 0 10%;
+            display: flex;
+            justify-content: center;
+          }
+          span {
+            font-weight: 600;
+          }
+        }
+
+        hr {
+          margin-bottom: 1rem;
+        }
+
+        .tableContent {
+          color: black;
+          background-color: white;
+          display: flex;
+          padding: 2rem;
+          align-items: center;
+          justify-content: space-around;
+
+          & > * {
+            flex: 0 0 10%;
+            display: flex;
+            justify-content: center;
+          }
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

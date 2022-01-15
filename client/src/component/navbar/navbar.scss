@@ -1,0 +1,62 @@
+.navbar {
+  &-container {
+    height: 6rem;
+    color: white;
+  }
+
+  &-wrapper {
+    padding: 2rem 3rem;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    & > * {
+      cursor: pointer;
+    }
+  }
+
+  &-center {
+    flex: 1;
+    text-align: center;
+  }
+
+  &-input {
+    font-size: inherit;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &-right {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    gap: 2.5rem;
+    & > * {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
